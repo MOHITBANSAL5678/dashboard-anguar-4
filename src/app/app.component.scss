@@ -1,0 +1,90 @@
+$slider-blue-color:#44738a;
+$slider-red-color:#905a5a;
+$slider-sky-blue-color:#71aac7;
+$slider-green-color: #3c563c;
+$slider-cyan-color: #2bbbad;
+$slider-yellow-color: #7e8259;
+$breakpoint-tablet: 768px;
+.leftSlide {
+    width: 240px !important;
+    float: left;
+    padding-left: 15px;
+}
+
+@media (min-width: $breakpoint-tablet) {
+    .view {
+        padding-left: 15px;
+        width: calc(100% - 240px);
+    }
+}
+
+.view {
+    z-index: 0;
+}
+
+.view-body {
+    margin-top: 52px;
+}
+
+.color-pick {
+    position: fixed;
+    height: 67px;
+    top: 96px;
+    width: 80px;
+    right: 0px;
+    text-align: center;
+    background: #a27f19;
+    line-height: 3;
+    opacity: .90;
+    z-index: 1;
+    .theme-colors {
+        background: #f8f9fa;
+        z-index: 1031;
+        width: 500px;
+        position: absolute;
+        right: 50px;
+        padding: 7px 10px;
+        height: 37px;
+        top: 1px;
+    }
+    i {
+        color: white;
+        margin: 12px;
+        font-size: 35px;
+    }
+}
+
+.green,
+.blue,
+.voilet,
+.red {
+    width: 25px;
+    float: left;
+    height: 25px;
+    margin-left: 5px;
+    border-radius: 12px;
+}
+
+.blue-theme-pick {
+    background: $slider-blue-color !important;
+}
+
+.red-theme-pick {
+    background: $slider-red-color !important;
+}
+
+.sky-theme-pick {
+    background: $slider-sky-blue-color !important;
+}
+
+.green-theme-pick {
+    background: $slider-green-color !important;
+}
+
+.cyan-theme-pick {
+    background: $slider-cyan-color !important;
+}
+
+.yellow-theme-pick {
+    background: $slider-yellow-color !important;
+}

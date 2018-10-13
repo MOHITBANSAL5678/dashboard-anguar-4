@@ -1,0 +1,101 @@
+$breakpoint-tablet: 768px;
+$body-bg-color: #f9f6f6;
+$slider-blue-color:#44738a;
+$slider-red-color:#905a5a;
+$slider-sky-blue-color:#71aac7;
+$slider-green-color: #3c563c;
+$slider-cyan-color: #2bbbad ;
+$slider-yellow-color: #7e8259 ;
+ 
+// $button-color: #e8a7a759;
+
+.theme-body {
+    &.blue-theme {
+        .slider .btn-primary,
+        .navbar-color,
+        .slider,
+        .btn-primary:not([disabled]):not(.disabled):active,
+        .btn-primary:not([disabled]):not(.disabled).active,
+        .show>.btn-primary.dropdown-toggle {
+            background: $slider-blue-color !important;
+        }
+    }
+    &.red-theme {
+       .slider .btn-primary,
+        .navbar-color,
+        .slider,
+        .btn-primary:not([disabled]):not(.disabled):active,
+        .btn-primary:not([disabled]):not(.disabled).active,
+        .show>.btn-primary.dropdown-toggle {
+            background: $slider-red-color !important;
+        }
+    }
+
+    &.sky-theme {
+        .slider .btn-primary,
+        .navbar-color,
+        .slider,
+        .btn-primary:not([disabled]):not(.disabled):active,
+        .btn-primary:not([disabled]):not(.disabled).active,
+        .show>.btn-primary.dropdown-toggle {
+            background: $slider-sky-blue-color !important;
+        }
+    }
+   
+    &.green-theme {
+        .slider .btn-primary,
+        .navbar-color,
+        .slider,
+        .btn-primary:not([disabled]):not(.disabled):active,
+        .btn-primary:not([disabled]):not(.disabled).active,
+        .show>.btn-primary.dropdown-toggle {
+            background: $slider-green-color !important;
+        }
+    }
+    &.cyan-theme {
+        .slider .btn-primary,
+        .navbar-color,
+        .slider,
+        .btn-primary:not([disabled]):not(.disabled):active,
+        .btn-primary:not([disabled]):not(.disabled).active,
+        .show>.btn-primary.dropdown-toggle {
+            background: $slider-cyan-color !important;
+        }
+    }
+    &.yellow-theme {
+        .slider .btn-primary,
+        .navbar-color,
+        .slider,
+        .btn-primary:not([disabled]):not(.disabled):active,
+        .btn-primary:not([disabled]):not(.disabled).active,
+        .show>.btn-primary.dropdown-toggle {
+            background:$slider-yellow-color !important;
+        }
+    }
+}
+
+.height {
+    height: -webkit-fill-available;
+}
+
+body {
+    font-family: sans-serif;
+    background: $body-bg-color;
+}
+
+@media (min-width: $breakpoint-tablet) {
+    .fixed-top {
+        left: 255px !important;
+    }
+}
+
+.navbar {
+    box-shadow: none;
+}
+
+@media (min-width: $breakpoint-tablet) {
+    .text-center {
+        text-align: center;
+    }
+}
+

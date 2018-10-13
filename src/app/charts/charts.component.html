@@ -1,0 +1,43 @@
+<app-breadcrumb [breadcrumbsList]="breadcrumbsList">
+</app-breadcrumb>
+
+<div class="charts">
+  <div class="row">
+    <div class="col-12 col-md-6">
+      <div style="display: block">
+        <canvas mdbChart [chartType]="chartType" [data]="chartData" [labels]="chartLabels" [colors]="chartColors" [options]="chartOptions"
+          [legend]="true" >
+        </canvas>
+      </div>
+    </div>
+    <div class="col-12 col-md-6">
+      <div style="display: block">
+        <canvas mdbChart [chartType]="chartTypePie" [data]="chartDataPie" [labels]="chartLabelsPie" [colors]="chartColorsPie" [options]="chartOptions"
+          [legend]="true">
+        </canvas>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 col-md-6">
+        <div style="display: block">
+            <canvas mdbChart
+                [chartType]="chartTypeLine"
+                [datasets]="chartDatasetsLine"
+                [labels]="chartLabelsLine"
+                [colors]="chartColorsLine"
+                [options]="chartOptions"
+                [legend]="true"
+              >
+            </canvas>
+        </div>
+    </div>
+    <div class="col-12 col-md-6">
+      <div style="display: block">
+        <canvas mdbChart [chartType]="chartTypeBar" [datasets]="chartDatasets" [labels]="chartLabelsBar" [colors]="chartColorsBar"
+          [options]="chartOptions" [legend]="true">
+        </canvas>
+      </div>
+    </div>
+  </div>
+</div>

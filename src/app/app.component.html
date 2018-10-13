@@ -1,0 +1,89 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<div class="height theme-body" [ngClass]="theme">
+  <div class="leftSlide d-none d-md-block height">
+    <app-sidebar></app-sidebar>
+  </div>
+  <div class="view">
+    <app-navbar></app-navbar>
+    <div class="view-body">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+
+  <div class="color-pick" (click)="colorPicker.toggle()">
+    <i class="fa fa-asterisk waves-light" aria-hidden="true" type="button" (click)="colorPicker.toggle()" mdbWavesEffect></i>
+    <div class="theme-colors" [mdbCollapse]="isCollapsed" #colorPicker="bs-collapse">
+      <div class="card">
+        <div class="card-header deep-orange lighten-1 white-text">
+          Choose Color For you or Custom Your Color
+        </div>
+        <div class="card-body">
+          <h4 class="card-title">Best Choose</h4>
+          <p class="card-text">Free Support for Custoom colors.</p>
+          <div class="row">
+              <div class="col-md-6">
+
+                  <!--Card Primary-->
+                  <div class="card indigo text-center z-depth-2" class="blue-theme-pick" (click)="theme='blue-theme'">
+                    <div class="card-body" >
+                      <p class="white-text mb-0">Dark Moderate Blue</p>
+                    </div>
+                  </div>
+                  <!--/.Card Primary-->
+                  <br>
+                  <!--Card Danger-->
+                  <div class="card pink lighten-2 text-center z-depth-2" class="red-theme-pick" (click)="theme='red-theme'">
+                    <div class="card-body">
+                      <p class="white-text mb-0">Desaturated Dark Red.</p>
+                    </div>
+                  </div>
+                  <!--/.Card Danger-->
+                  <br>
+                  <!--Card Success-->
+                  <div class="card info-color text-center z-depth-2"  class="sky-theme-pick" (click)="theme='sky-theme'">
+                    <div class="card-body">
+                      <p class="white-text mb-0">Desaturated Blue.</p>
+                    </div>
+                  </div>
+                  <!--/.Card Success-->
+    
+                </div>
+    
+
+            <div class="col-md-6">
+
+              <!--Card Primary-->
+              <div class="card indigo text-center z-depth-2" class="yellow-theme-pick" (click)="theme='yellow-theme'">
+                <div class="card-body" >
+                  <p class="white-text mb-0">Mostly Dark Yellow</p>
+                </div>
+              </div>
+              <!--/.Card Primary-->
+              <br>
+              <!--Card Danger-->
+              <div class="card pink lighten-2 text-center z-depth-2" class="green-theme-pick" (click)="theme='green-theme'">
+                <div class="card-body">
+                  <p class="white-text mb-0">Lime Green.</p>
+                </div>
+              </div>
+              <!--/.Card Danger-->
+              <br>
+              <!--Card Success-->
+              <div class="card info-color text-center z-depth-2" class="cyan-theme-pick"  (click)="theme='cyan-theme'">
+                <div class="card-body">
+                  <p class="white-text mb-0">Strong Cyan.</p>
+                </div>
+              </div>
+              <!--/.Card Success-->
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <app-footer></app-footer>
+</div>

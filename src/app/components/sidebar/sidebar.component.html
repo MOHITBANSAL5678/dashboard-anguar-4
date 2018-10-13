@@ -1,0 +1,59 @@
+<div class="row slider height">
+
+    <div class="col-md-12">
+        <div class="col-md-12 title">
+            <img src="../../../assets/logo.png" class="loggo">
+            <span>Dashboard Theme</span>
+        </div>
+
+        <ul class="list-group list">
+
+            <li type="button" class="btn btn-primary" routerLink="/dashboard">
+                <i class="fa fa-dashboard" aria-hidden="true"></i> Dashboard </li>
+            <li type="button" class="btn btn-primary" routerLink="/charts">
+                <i class="fa fa-dot-circle-o" aria-hidden="true"></i>Charts</li>
+            <li type="button" class="btn btn-primary" routerLink="/form">
+                <i class="fa fa-wpforms" aria-hidden="true"></i>Form </li>
+
+            <li type="button" class="btn btn-primary" routerLink="/table">
+                <i class="fa fa-table" aria-hidden="true"></i>Table </li>
+            <li type="button" class="btn btn-primary" routerLink="/map">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>Maps</li>
+
+
+
+            <!-- 
+            <li type="button" class="btn btn-primary" routerLink="/dashboard">Typehead</li>
+           -->
+
+            <li type="button" class="btn btn-primary" (click)="componet.toggle(); arrowIcon=!arrowIcon" mdbWavesEffect>Nested Option
+                <i *ngIf="arrowIcon" class="fa fa-arrow-down" aria-hidden="true"></i>
+                <i *ngIf="!arrowIcon" class="fa fa-arrow-up" aria-hidden="true"></i>
+            </li>
+
+            <ul class="list-group nested" [mdbCollapse]="isCollapsed" #componet="bs-collapse">
+                <li type="button" class="btn btn-primary">Table
+                </li>
+                <li type="button" class="btn btn-primary">Form
+                </li>
+
+                <li type="button" class="btn btn-primary">Form
+                </li>
+
+            </ul>
+        </ul>
+
+
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item social-icon" mdbWavesEffect>
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+
+            </li>
+        </ul>
+    </div>
+
+
+</div>
