@@ -4,7 +4,7 @@ import { MDBBootstrapModule, CollapseModule, WavesModule, InputsModule } from 'a
 import { RouterModule, Routes } from '@angular/router';
 import { ChartsModule } from 'angular-bootstrap-md'
 import { AgmCoreModule } from '@agm/core';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -18,6 +18,8 @@ import { ChartsComponent } from './charts/charts.component';
 import { MapComponent } from './map/map.component';
 import { TableComponent } from './table/table.component';
 import { FormComponent } from './form/form.component';
+
+
 
 const appRoutes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
@@ -51,7 +53,8 @@ const appRoutes: Routes = [
     CollapseModule,
     WavesModule,
     InputsModule,
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule
   ],
   declarations: [
     AppComponent,

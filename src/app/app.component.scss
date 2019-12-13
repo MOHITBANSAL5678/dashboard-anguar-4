@@ -19,6 +19,7 @@ $breakpoint-tablet: 768px;
 }
 
 .view {
+    float: right;
     z-index: 0;
 }
 
@@ -42,15 +43,15 @@ $breakpoint-tablet: 768px;
         z-index: 1031;
         width: 500px;
         position: absolute;
-        right: 50px;
+        right: 80px;
         padding: 7px 10px;
         height: 37px;
         top: 1px;
     }
     i {
         color: white;
-        margin: 12px;
-        font-size: 35px;
+        margin: 19px 0px;
+        font-size: 25px;
     }
 }
 
