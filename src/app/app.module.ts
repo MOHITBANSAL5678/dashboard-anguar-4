@@ -18,6 +18,8 @@ import { ChartsComponent } from './charts/charts.component';
 import { MapComponent } from './map/map.component';
 import { TableComponent } from './table/table.component';
 import { FormComponent } from './form/form.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 
 
@@ -54,7 +56,8 @@ const appRoutes: Routes = [
     WavesModule,
     InputsModule,
     BrowserModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   declarations: [
     AppComponent,
